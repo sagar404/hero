@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sentiment Analysis</title>
+</head>
+<body>
+ <div class= "login">
+    <h1>Sentimental Analysis Tool by Sagar Waghela </h1>
+    
+    
+    <form action = "{{url_for('predict')}}"method="post">
+      <input type="text" name="message" placeholder="Enter the Text" required="required"/>
+      
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+    
+    <br>
+    <br>
+    {{pred_text1}}
+    
+    <br>
+    <br>
+    {{pred_text2}}
+    
+    <br>
+    <br>
+    {{pred_text3}}
+ </div>
+ 
+</body>
+</html>
